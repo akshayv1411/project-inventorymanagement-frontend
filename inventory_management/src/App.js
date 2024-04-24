@@ -1,16 +1,17 @@
-import React from 'react';
-import AddCategoriesPage from './components/AddCategoriesPage';
-import LoginPage from './components/LoginPage';
-import AddUsersPage from './components/AddUsersPage';
-import AddProductPage from './components/AddProductPage';
 
+import './App.css';
+import Cards from './Componets/Cards';
+import Navbar from './Componets/Navbar';
+import Login from './Componets/Login1';
+import AddUsers from './Componets/AddUsers'
 function App() {
   return (
     <div className="App">
-      <LoginPage />
-      <AddUsersPage />
-      <AddCategoriesPage/>
-      <AddProductPage />
+   <Login/>
+    <Navbar/>
+    <Cards/>
+    <AddUsers/>
+   
     </div>
   );
 }
