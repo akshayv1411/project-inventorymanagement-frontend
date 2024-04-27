@@ -1,14 +1,10 @@
 import React from 'react';
-
-
-import SignUp from './Componets/SignUp';
+import AddUsers1 from './Componets/AddUsers1';
 
 function App() {
   return (
     <div className="App">
-
-     <SignUp/>
-   
+      <AddUsers1/>
     </div>
   );
 }
