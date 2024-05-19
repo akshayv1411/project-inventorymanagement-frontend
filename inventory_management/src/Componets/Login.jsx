@@ -1,7 +1,7 @@
 import React from "react";
-import { Avatar, FormControlLabel, Grid, Paper, TextField, Checkbox, Button, Typography, Link } from "@mui/material";
+import { Avatar, FormControlLabel, Grid, Paper, TextField, Checkbox, Button, Typography } from "@mui/material";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-
+import { Link } from 'react-router-dom';
 const Login = () => {
   const paperStyle = {
     padding: 20,
@@ -40,7 +40,7 @@ const Login = () => {
               <Link href="#" variant="body2">Forgot Password?</Link>
             </Typography>
             <Typography>
-              <Link href="#" variant="body2">Already have an account? Sign up</Link>
+              <Link to={"/signup"} variant="body2">Don't have an account? Sign up</Link>
             </Typography>
           </Grid>
         </Grid>
