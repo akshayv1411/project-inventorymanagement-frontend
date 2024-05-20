@@ -81,7 +81,7 @@ const SignUp = () => {
             <option disabled hidden>Please select your role</option>
             <option value="1">User</option>
             <option value="2">Staff</option>
-            <option value="3">Mechanic</option>
+           
          </Form.Select>
          </Form.Group>
 
