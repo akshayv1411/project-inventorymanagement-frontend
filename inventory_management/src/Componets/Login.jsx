@@ -1,12 +1,12 @@
 import React from "react";
-import { Avatar, FormControlLabel, Grid, Paper, TextField, Checkbox, Button, Typography, Link } from "@mui/material";
+import { Avatar, FormControlLabel, Grid, Paper, TextField, Checkbox, Button, Typography } from "@mui/material";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-
+import { Link } from 'react-router-dom';
 const Login = () => {
   const paperStyle = {
     padding: 20,
-    height: '70vh',
-    width: 280,
+    height: '50vh',
+    width: "30vw",
     margin: "20px auto"
   };
 
@@ -23,7 +23,7 @@ const Login = () => {
           <Avatar style={avatarStyle}><LockOutlinedIcon/></Avatar>
           <h2>Sign in</h2>
         </Grid> 
-        <Grid container direction="column" spacing={2} alignItems="center">
+        <Grid container direction="column" spacing={6} alignItems="center">
           <Grid item>
             <TextField label="Username" placeholder="Enter Username" fullWidth required style={textFieldStyle} />
           </Grid>
@@ -40,7 +40,7 @@ const Login = () => {
               <Link href="#" variant="body2">Forgot Password?</Link>
             </Typography>
             <Typography>
-              <Link href="#" variant="body2">Already have an account? Sign up</Link>
+              <Link to={"/signup"} variant="body2">Don't have an account? Sign up</Link>
             </Typography>
           </Grid>
         </Grid>
